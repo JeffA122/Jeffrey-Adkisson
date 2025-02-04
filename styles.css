@@ -37,21 +37,30 @@ body {
   color: #007BFF;
 }
 
-/* Hero Section */
+/* Hero Section - Dark Background & White Text */
 .hero {
-  background: url('background.jpg') center/cover no-repeat;
+  background: #000; /* Black Background */
+  color: white;
   height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  padding: 20px;
 }
 
+/* Hero Text Styling */
 .hero-content h1 {
   font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
+.hero-content p {
+  font-size: 1.2em;
+  opacity: 0.9; /* Slightly dim for elegance */
+}
+
+/* Hero Button */
 .hero-btn {
   padding: 10px 20px;
   background: #007BFF;
