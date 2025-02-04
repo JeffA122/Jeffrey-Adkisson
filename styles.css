@@ -53,78 +53,123 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
+    position: relative;
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 3.5em; /* Larger header */
     margin: 0;
+    line-height: 1.3;
 }
 
 .hero p {
     font-size: 1.5em;
     margin: 10px 0;
+    line-height: 1.6;
 }
 
 .dark-mode-btn {
     margin-top: 15px;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 12px 24px;
+    font-size: 1.1em;
     border: none;
     cursor: pointer;
     background: #ffcc00;
     color: black;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+    border-radius: 30px; /* Rounded corners */
+    transition: background 0.3s ease, transform 0.3s ease; /* Add transformation effect */
+    font-weight: bold;
 }
 
 .dark-mode-btn:hover {
     background: #e6b800;
+    transform: translateY(-2px); /* Slight lifting effect on hover */
 }
 
 /* Main Content */
 .content-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    gap: 30px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr; /* Stacks content on smaller screens */
+    }
 }
 
 .profile, .education {
     background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 90%;
     max-width: 600px;
     text-align: center;
 }
 
 .profile:hover, .education:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
+    border: 4px solid #0073e6; /* Add a border around the image */
     display: block;
-    margin: 0 auto 15px;
+    margin: 0 auto 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #555; /* A bit softer text color */
 }
 
 /* Footer */
 .footer {
-    text-align: center;
-    padding: 20px;
+    padding: 30px 20px;
     background: #0073e6;
     color: white;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .linkedin-link img {
     width: 50px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
+
+.linkedin-link img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2); /* Slight brightness effect on hover */
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth; /* Enable smooth scroll behavior */
+}
+
 
 .linkedin-link img:hover {
     transform: scale(1.1);
