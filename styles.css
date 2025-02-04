@@ -119,48 +119,87 @@ body {
   width: 30px;
   height: auto;
 }
-/* Contact Form Styles */
+/* Contact Section Styling */
 #contact {
-  background-color: #f9f9f9;
-  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+/* Bubble-like Contact Card */
+.contact-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.contact-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-#contact h2 {
-  margin-bottom: 20px;
+.contact-card h2 {
+  margin-bottom: 10px;
   font-size: 2em;
+  color: #333;
 }
 
-#contact form {
-  max-width: 600px;
-  margin: 0 auto;
+.contact-card p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.contact-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-card label {
   text-align: left;
-}
-
-#contact label {
-  display: block;
-  margin-bottom: 5px;
   font-weight: bold;
 }
 
-#contact input,
-#contact textarea {
+.contact-card input,
+.contact-card textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 16px;
 }
 
-#contact button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
+.contact-card button {
+  padding: 12px;
+  background: #007BFF;
+  color: white;
   border: none;
   border-radius: 5px;
+  font-size: 18px;
   cursor: pointer;
 }
 
-#contact button:hover {
-  background-color: #0056b3;
+.contact-card button:hover {
+  background: #0056b3;
+}
+
+/* LinkedIn Icon Inside Bubble */
+.linkedin-container {
+  margin-top: 20px;
+}
+
+.linkedin-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.linkedin-container img:hover {
+  transform: scale(1.1);
 }
