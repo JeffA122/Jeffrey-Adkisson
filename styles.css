@@ -1,14 +1,15 @@
-/* General Styles */
+/* General Styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #fff;
+  color: #000;
 }
 
 /* Fixed Header */
 .fixed-header {
-  background: #333;
+  background: #000;
   color: white;
   padding: 10px 0;
   position: fixed;
@@ -17,16 +18,23 @@ body {
   left: 0;
   z-index: 1000;
 }
+
 .fixed-header .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 20px;
 }
+
 .fixed-header nav a {
   color: white;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
+  transition: color 0.3s;
+}
+
+.fixed-header nav a:hover {
+  color: #007BFF;
 }
 
 /* Hero Section */
@@ -39,122 +47,82 @@ body {
   text-align: center;
   color: white;
 }
+
 .hero-content h1 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
+
 .hero-btn {
   padding: 10px 20px;
-  background: #ff5a5f;
+  background: #007BFF;
   border: none;
   color: white;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
 }
+
 .hero-btn:hover {
-  background: #e74c3c;
-}
-
-/* Profile & Education */
-.content-grid {
-  display: flex;
-  justify-content: space-around;
-  padding: 50px 20px;
-}
-.profile, .education {
-  max-width: 45%;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.profile-img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* Contact Section */
-.contact-section {
-  background: #fff;
-  padding: 50px 20px;
-  text-align: center;
-  margin-top: 50px;
-}
-.contact-section h2 {
-  color: #333;
-}
-.contact-section form {
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-.contact-section input,
-.contact-section textarea {
-  margin: 10px 0;
-  padding: 10px;
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.contact-section button {
-  padding: 10px;
-  background: #007BFF;
-  border: none;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-}
-.contact-section button:hover {
   background: #0056b3;
 }
 
-/* Footer */
-.footer {
-  background: #333;
-  text-align: center;
+/* Profile & Education Section */
+.content-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+/* Bubble-Like Sections */
+.profile, .education {
+  max-width: 400px;  /* ⬅️ Smaller bubbles */
+  background: white;
   padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
 }
-.footer img {
-  width: 30px;
-  height: auto;
+
+.profile-img {
+  width: 80px; /* ⬅️ Smaller image */
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
-/* Contact Section Styling */
+
+/* Contact Section */
 #contact {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 60px 20px;
-  background: #f9f9f9;
+  background: white;
   min-height: 50vh;
 }
 
-/* Bubble-like Contact Card */
 .contact-container {
-  max-width: 500px;
+  max-width: 400px; /* ⬅️ Smaller Contact Bubble */
   width: 100%;
 }
 
 .contact-card {
   background: white;
   padding: 30px;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .contact-card h2 {
-  margin-bottom: 10px;
-  font-size: 2em;
-  color: #333;
+  font-size: 1.8em;
+  color: black;
 }
 
 .contact-card p {
   color: #555;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 /* Form Styling */
@@ -163,11 +131,6 @@ body {
   flex-direction: column;
   width: 100%;
   gap: 10px;
-}
-
-.contact-card label {
-  text-align: left;
-  font-weight: bold;
 }
 
 .contact-card input,
@@ -180,12 +143,12 @@ body {
 }
 
 .contact-card button {
-  padding: 12px;
+  padding: 10px;
   background: #007BFF;
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   width: 100%;
 }
@@ -196,7 +159,7 @@ body {
 
 /* LinkedIn Icon Inside Bubble */
 .linkedin-container {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .linkedin-container a {
@@ -204,17 +167,29 @@ body {
   justify-content: center;
   align-items: center;
   background: #0077b5;
-  width: 50px;
-  height: 50px;
+  width: 40px; /* ⬅️ Smaller */
+  height: 40px;
   border-radius: 50%;
   transition: transform 0.3s;
 }
 
 .linkedin-container img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 .linkedin-container a:hover {
   transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer img {
+  width: 30px;
+  height: auto;
 }
