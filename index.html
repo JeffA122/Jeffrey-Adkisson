@@ -5,24 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeffrey Adkisson | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <script>
-    // Smooth scroll function for navigation links
-    function scrollToSection(id) {
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
 </head>
 <body>
   <!-- Fixed Header -->
   <header class="fixed-header">
     <div class="container">
       <nav>
-        <a href="#about" onclick="scrollToSection('about')">Home</a>
-        <a href="#experience" onclick="scrollToSection('experience')">Experience</a>
-        <a href="#leadership" onclick="scrollToSection('leadership')">Leadership</a>
-        <a href="#skills" onclick="scrollToSection('skills')">Skills</a>
-        <a href="#education" onclick="scrollToSection('education')">Education</a>
-        <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="Internships.html">Internships</a>
+        <a href="Professional.html">Professional</a>
+        <a href="Contact.html">Contact</a>   
         <a href="https://docs.google.com/document/d/1ifofARU-UuMPQfdjILcnPZrEnoeOnhFX1lrKAQ1qiqw/edit?usp=sharing" target="_blank" class="resume-btn">Resume</a>
       </nav>
     </div>
@@ -33,148 +25,35 @@
     <div class="hero-content">
       <h1>Jeffrey Adkisson</h1>
       <p>IT Professional | Data Analytics | Software Engineering</p>
-      <button class="hero-btn" onclick="scrollToSection('about')">Learn More</button>
+      <!-- You can change the button text or link as needed -->
+      <button class="hero-btn">Learn More</button>
     </div>
   </section>
   
-  <!-- About Me Section -->
-  <section class="profile" id="about">
-    <img src="Logo1.JPG" alt="Jeffrey Adkisson's Profile Picture" class="profile-img">
-    <h2>About Me</h2>
-    <p>
-      I am a detail-oriented IT professional with expertise in data analytics, programming, and software engineering.
-      Passionate about technology and innovation, I specialize in creating solutions that enhance user experiences
-      and drive business efficiency.
-    </p>
-  </section>
-  
-  <!-- Education Section -->
-  <section class="education" id="education">
-    <h2>Education</h2>
-    <p>Bachelor of Business Administration, Concentration in Computer Information Systems</p>
-    <p>Shaw University, Raleigh, NC | Expected Graduation: May 2025</p>
-  </section>
-  
-  <!-- Professional Experience Section (Floating Bubbles) -->
-  <section class="experience" id="experience">
-    <h2>Professional Experience</h2>
-    <div class="experience-bubbles">
-      <!-- Experience Bubble 1 -->
-      <div class="experience-bubble">
-        <h3>AI Solutions</h3>
-        <p class="company">Shaw University, Raleigh, NC</p>
-        <p class="dates">August 2024 - Present</p>
-        <ul>
-          <li>Enhanced student user experience by developing and programming a multilingual chatbot using ChatGPT API, increasing efficiency by 30% and reducing support requests by 25%.</li>
-          <li>Streamlined troubleshooting for students, handling 10+ hardware/software issues weekly and reducing resolution time by 15%.</li>
-          <li>Launched chatbot updates for over 1,500 users, boosting engagement with digital university services by 20%.</li>
-        </ul>
-      </div>
-      
-      <!-- Experience Bubble 2 -->
-      <div class="experience-bubble">
-        <h3>IT Digital Solutions</h3>
-        <p class="company">UNCF, ICB | Raleigh, NC</p>
-        <p class="dates">June - August 2024</p>
-        <ul>
-          <li>Contributed to the design and implementation of "HBCUv," increasing user engagement by 15% across 10+ HBCUs.</li>
-          <li>Conducted UAT, identifying and resolving 50+ bugs for a 25% improvement in platform stability.</li>
-          <li>Collaborated with stakeholders to secure $500K in funding for feature development.</li>
-        </ul>
-      </div>
-      
-      <!-- Experience Bubble 3 -->
-      <div class="experience-bubble">
-        <h3>Data Analytics I</h3>
-        <p class="company">Blue Cross Blue Shield of NC | Durham, NC</p>
-        <p class="dates">May - July 2024</p>
-        <ul>
-          <li>Improved data quality score from 69% to 70% by collaborating with governance teams.</li>
-          <li>Audited critical data elements in Collibra, reducing processing errors by 20%.</li>
-          <li>Integrated production elements into the Member Pulse Dashboard for timely, accurate info.</li>
-        </ul>
-      </div>
-      
-      <!-- Experience Bubble 4 -->
-      <div class="experience-bubble">
-        <h3>Private Policy</h3>
-        <p class="company">The Hunt-Institute | Cary, NC</p>
-        <p class="dates">November 2023 - January 2024</p>
-        <ul>
-          <li>Analyzed legislative policies impacting West Virginia; recommendations adopted in 3 areas.</li>
-          <li>Authored policy briefs that reduced internal research time by 15%.</li>
-        </ul>
-      </div>
-      
-      <!-- Experience Bubble 5 -->
-      <div class="experience-bubble">
-        <h3>IT Business Analyst</h3>
-        <p class="company">Syneos Health | Raleigh, NC</p>
-        <p class="dates">May 2023 - August 2023</p>
-        <ul>
-          <li>Automated data entry with PowerBI, boosting efficiency by 50% and reducing errors by 30%.</li>
-          <li>Developed a server monitoring dashboard to cut downtime by 15%.</li>
-          <li>Streamlined the purchase order process, reducing cycle time by 20%.</li>
-        </ul>
-      </div>
-      
-      <!-- Experience Bubble 6 -->
-      <div class="experience-bubble">
-        <h3>Performance Scale Engineer</h3>
-        <p class="company">Red Hat | Raleigh, NC</p>
-        <p class="dates">May 2022 - August 2022</p>
-        <ul>
-          <li>Diagnosed and resolved 75% of root-cause issues in the benchmark operator prototype.</li>
-          <li>Conducted 30+ tests to improve system durability, reducing failure rates by 15%.</li>
-          <li>Developed bash scripts and Python code on GitHub, enhancing automation efficiency by 40%.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Leadership & Service Section -->
-  <section class="leadership" id="leadership">
-    <h2>Leadership & Service</h2>
-    <ul>
-      <li>Member, Omega Psi Phi Fraternity, Inc.</li>
-      <li>Mental and Physical Health Educator, Wake County Medical, Raleigh, NC</li>
-      <li>
-        Career Ambassadors Program, Experiential Learning and Career Development Center, Shaw University<br>
-        <small>Mentored 25-50 students on professional development and engaged with 10+ corporate partners to facilitate career-building workshops.</small>
-      </li>
-      <li>
-        Thurgood Marshall College Fund: Leadership Incubator Program, Summer 2023<br>
-        <small>Participated in the inaugural summer leadership intensive with students from over 20 HBCUs.</small>
-      </li>
-    </ul>
-  </section>
-  
-  <!-- Transferable Skills Section -->
-  <section class="skills" id="skills">
-    <h2>Transferable Skills</h2>
-    <ul>
-      <li><strong>Programming:</strong> Python, Bash, Jekyll, HTML</li>
-      <li><strong>Data Analytics:</strong> PowerBI, O360, Ataccama, Collibra</li>
-      <li><strong>Tools:</strong> GitHub, BaseIT, Jira</li>
-      <li><strong>Methodologies:</strong> Agile, UAT, Project Management</li>
-      <li><strong>Other Skills:</strong> Analytical Thinking, Problem-solving, DevOps Solutions</li>
-    </ul>
-  </section>
-  
-  <!-- Contact Section (Replacing LinkedIn Footer) -->
-  <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <form class="contact-form" action="mailto:JeffreyAdkisson12@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+  <!-- Main Content -->
+  <main class="content-grid">
+    <section class="profile">
+      <img src="Logo1.JPG" alt="Jeffrey Adkisson's Profile Picture" class="profile-img">
+      <h2>About Me</h2>
+      <p>
+        I am a detail-oriented IT professional with expertise in data analytics, programming, and software engineering.
+        Passionate about technology and innovation, I specialize in creating solutions that enhance user experiences
+        and drive business efficiency.
+      </p>
+    </section>
+    
+    <section class="education">
+      <h2>Education</h2>
+      <p>Bachelor of Business Administration, Concentration in Computer Information Systems</p>
+      <p>Shaw University, Raleigh, NC | Expected Graduation: May 2025</p>
+    </section>
+  </main>
   
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 Jeffrey Adkisson. All Rights Reserved.</p>
+    <a href="https://www.linkedin.com/in/jeffrey-adkisson-766654175/" target="_blank" class="linkedin-link">
+      <img src="Linkdin.png" alt="LinkedIn Profile" class="linkedin-img">
+    </a>
   </footer>
 </body>
 </html>
