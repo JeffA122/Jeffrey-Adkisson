@@ -11,10 +11,11 @@
   <header class="fixed-header">
     <div class="container">
       <nav>
-        <a href="index.html">Home</a>
-        <a href="Internships.html">Internships</a>
-        <a href="Professional.html">Professional</a>
-        <a href="Contact.html">Contact</a>   
+        <a href="#about">Home</a>
+        <a href="#experience">Experience</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
         <a href="https://docs.google.com/document/d/1ifofARU-UuMPQfdjILcnPZrEnoeOnhFX1lrKAQ1qiqw/edit?usp=sharing" target="_blank" class="resume-btn">Resume</a>
       </nav>
     </div>
@@ -25,36 +26,56 @@
     <div class="hero-content">
       <h1>Jeffrey Adkisson</h1>
       <p>IT Professional | Data Analytics | Software Engineering</p>
-      <!-- You can change the button text or link as needed -->
-      <button class="hero-btn">Learn More</button>
+      <button class="hero-btn" onclick="window.scrollTo({top: document.getElementById('about').offsetTop, behavior: 'smooth'});">
+        Learn More
+      </button>
     </div>
   </section>
   
-  <!-- Main Content -->
-  <main class="content-grid">
-    <section class="profile">
-      <img src="Logo1.JPG" alt="Jeffrey Adkisson's Profile Picture" class="profile-img">
-      <h2>About Me</h2>
-      <p>
-        I am a detail-oriented IT professional with expertise in data analytics, programming, and software engineering.
-        Passionate about technology and innovation, I specialize in creating solutions that enhance user experiences
-        and drive business efficiency.
-      </p>
-    </section>
-    
-    <section class="education">
-      <h2>Education</h2>
-      <p>Bachelor of Business Administration, Concentration in Computer Information Systems</p>
-      <p>Shaw University, Raleigh, NC | Expected Graduation: May 2025</p>
-    </section>
-  </main>
+  <!-- About Me Section -->
+  <section class="profile" id="about">
+    <img src="Logo1.JPG" alt="Jeffrey Adkisson's Profile Picture" class="profile-img">
+    <h2>About Me</h2>
+    <p>
+      I am a detail-oriented IT professional with expertise in data analytics, programming, and software engineering.
+      Passionate about technology and innovation, I specialize in creating solutions that enhance user experiences
+      and drive business efficiency.
+    </p>
+  </section>
   
-  <!-- Footer -->
-  <footer class="footer">
-    <a href="https://www.linkedin.com/in/jeffrey-adkisson-766654175/" target="_blank" class="linkedin-link">
-      <img src="Linkdin.png" alt="LinkedIn Profile" class="linkedin-img">
-    </a>
-  </footer>
-</body>
-</html>
-
+  <!-- Education Section -->
+  <section class="education" id="education">
+    <h2>Education</h2>
+    <p>Bachelor of Business Administration, Concentration in Computer Information Systems</p>
+    <p>Shaw University, Raleigh, NC | Expected Graduation: May 2025</p>
+  </section>
+  
+  <!-- Professional Experience Section -->
+  <section class="experience" id="experience">
+    <h2>Professional Experience</h2>
+    
+    <!-- Experience Item 1 -->
+    <div class="experience-item">
+      <h3>AI Solutions</h3>
+      <p class="company">Shaw University, Raleigh, NC</p>
+      <p class="dates">August 2024 - Present</p>
+      <ul>
+        <li>Enhanced student user experience by developing and programming a multilingual chatbot using ChatGPT API, increasing efficiency in resolving student queries by 30% and reducing support requests by 25%.</li>
+        <li>Streamlined the troubleshooting process for students, handling 10+ hardware and software issues weekly, reducing average resolution time by 15%.</li>
+        <li>Developed and launched chatbot updates for over 1,500 users, improving overall student engagement with digital university services by 20%.</li>
+      </ul>
+    </div>
+    
+    <!-- Experience Item 2 -->
+    <div class="experience-item">
+      <h3>IT Digital Solutions</h3>
+      <p class="company">UNCF, ICB, Raleigh, NC</p>
+      <p class="dates">June - August 2024</p>
+      <ul>
+        <li>Contributed to the design and implementation of "HBCUv," increasing platform user engagement by 15% across 10+ HBCUs through improved asynchronous learning tools.</li>
+        <li>Conducted User Acceptance Testing (UAT), identifying and resolving 50+ bugs, resulting in a 25% improvement in platform stability before launch.</li>
+        <li>Collaborated with stakeholders to negotiate $500K in funding, ensuring development of features aligned with student and faculty needs across multiple institutions.</li>
+      </ul>
+    </div>
+    
+   
