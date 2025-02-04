@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -21,14 +22,12 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .fixed-header nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    font-size: 1.2em;
 }
 
 .fixed-header nav a {
@@ -36,7 +35,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-    padding: 10px 15px;
+    padding: 10px;
 }
 
 .fixed-header nav a:hover {
@@ -54,11 +53,13 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
+    background-size: cover;
 }
 
 .hero h1 {
     font-size: 3em;
     margin: 0;
+    word-wrap: break-word;
 }
 
 .hero p {
@@ -89,7 +90,7 @@ body {
     justify-content: center;
     gap: 20px;
     padding: 40px;
-    margin-top: 80px; /* To avoid overlap with fixed header */
+    margin-top: 80px; /* to avoid overlap with fixed header */
 }
 
 .profile, .education {
@@ -101,7 +102,6 @@ body {
     width: 90%;
     max-width: 600px;
     text-align: center;
-    margin: 15px 0;
 }
 
 .profile:hover, .education:hover {
@@ -114,6 +114,8 @@ body {
     border-radius: 50%;
     display: block;
     margin: 0 auto 15px;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Footer */
@@ -129,31 +131,16 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-.linkedin-link img:hover {
-    transform: scale(1.1);
-}
-
-/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-    .fixed-header nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
     .hero h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .hero p {
         font-size: 1.2em;
     }
 
-    .content-grid {
-        padding: 20px;
-    }
-
     .profile, .education {
         width: 100%;
-        max-width: none;
     }
 }
