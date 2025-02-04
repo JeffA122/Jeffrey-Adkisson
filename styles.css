@@ -87,3 +87,61 @@ body {
   padding: 10px 20px;
   border-radius: 5px;
   cursor
+
+/* =========================
+   Professional Experience Section
+========================= */
+.experience {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.experience h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Container for the floating bubbles */
+.experience-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each experience bubble */
+.experience-bubble {
+  background: #e0f7ff; /* Light baby blue background */
+  color: #000;
+  border-radius: 25px;
+  padding: 20px;
+  width: 300px; /* Adjust width as needed */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-bubble:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Bubble text styles */
+.experience-bubble h3 {
+  margin-top: 0;
+  color: #00aaff; /* Baby blue highlight for job titles */
+}
+
+.experience-bubble .company,
+.experience-bubble .dates {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.experience-bubble ul {
+  list-style: disc inside;
+  padding-left: 20px;
+  text-align: left;
+}
