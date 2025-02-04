@@ -9,8 +9,8 @@ body {
 
 /* Fixed Header */
 .fixed-header {
-  background: #000;
-  color: Black;
+  background: #000;  /* Black background */
+  color: white;  /* Fixed text color (was black before) */
   padding: 10px 0;
   position: fixed;
   width: 100%;
@@ -49,7 +49,6 @@ body {
   padding: 20px;
 }
 
-/* Hero Text Styling */
 .hero-content h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
@@ -60,7 +59,6 @@ body {
   opacity: 0.9; /* Slightly dim for elegance */
 }
 
-/* Hero Button */
 .hero-btn {
   padding: 10px 20px;
   background: #007BFF;
@@ -85,7 +83,7 @@ body {
 
 /* Bubble-Like Sections */
 .profile, .education {
-  max-width: 400px;  /* ⬅️ Smaller bubbles */
+  max-width: 350px;  /* ⬅️ Made bubbles smaller */
   background: white;
   padding: 20px;
   border-radius: 15px;
@@ -95,8 +93,8 @@ body {
 }
 
 .profile-img {
-  width: 80px; /* ⬅️ Smaller image */
-  height: 80px;
+  width: 70px; /* ⬅️ Made image slightly smaller */
+  height: 70px;
   border-radius: 50%;
   margin-bottom: 15px;
 }
