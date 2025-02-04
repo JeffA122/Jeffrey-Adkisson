@@ -1,69 +1,51 @@
-
 <!DOCTYPE html>
-<html> <head>
- <meta charset="utf-8">
- <title>Jeffrey Adkisson Portfolio</title</title>
- <link rel="stylesheet" href="styles.css">
- 
-   
- <button onclick="myFunction()">change mode</button>
-
- <script>
- function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
- }
- </script>
-
-
-  
- </head>
- <body>
-
-  <div class="fixed-header">
-    <div class="container">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="Internships.html">Internships</a>
-            <a href = "Professional.html">Professional</a>
-            <a href="Contact.html">Contact</a>   
-            <a href = "https://docs.google.com/document/d/1ifofARU-UuMPQfdjILcnPZrEnoeOnhFX1lrKAQ1qiqw/edit?usp=sharing"> Resume </a> 
-            
-        </nav>
-    </div>
-
-</div>
-    <div class="grid-2">
-        <div class= "section-1">
-          <img src = "Logo1.JPG"  alt="Logo1 in PR" width="550" height="600" >
-           <h2>Jeffrey Adkisson</h2>
-           <p>Washington Dc</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffrey Adkisson | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="container">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Internships.html">Internships</a>
+                <a href="Professional.html">Professional</a>
+                <a href="Contact.html">Contact</a>   
+                <a href="https://docs.google.com/document/d/1ifofARU-UuMPQfdjILcnPZrEnoeOnhFX1lrKAQ1qiqw/edit?usp=sharing" target="_blank">Resume</a>
+            </nav>
         </div>
-              
-
-    <div class="section-2">
-    <h2>Biography</h2>
-     <p>Hello, My name is Jeffrey Adkisson I am 20 years old. I attend Shaw University.
-     I am currently puirsuing my bachelor degree in Computer Information Systems at Shaw University in Raleigh, North Carolina.  
-     I am currenty pursuing an internship for SAS. This is my portfolio where you can learn a little bit more about me.
-    </p>
-
-     <h2>Education</h2>
-     <p>I am a student at Shaw University where I study Computer Information Systems IT/Track, and I will graduate in may 2025. <p>
-   
-     </div>
-
- 
-
-    <footer>
-          
-          <a href="https://www.linkedin.com/in/jeffrey-adkisson-766654175/" >
-      <img alt="Linkedin" src="Linkdin.png" width="58" height="56"></a>
-    </footer>
-             
-  
- 
-</body>
+    </header>
     
-
+    <main class="grid-2">
+        <section class="section-1">
+            <img src="Logo1.JPG" alt="Jeffrey Adkisson's Logo" width="550" height="600">
+            <h2>Jeffrey Adkisson</h2>
+            <p>Washington, DC</p>
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </section>
+        
+        <section class="section-2">
+            <h2>Biography</h2>
+            <p>I am a detail-oriented IT professional with a strong background in data analytics, programming, and software engineering. My expertise lies in developing innovative solutions that enhance user experiences and improve operational efficiency. With experience in automating processes, analyzing complex data, and collaborating with cross-functional teams, I strive to align technology initiatives with business objectives. My work includes multilingual chatbot development, data quality improvement, and AI-driven automation.</p>
+            
+            <h2>Education</h2>
+            <p>I am currently pursuing a Bachelor of Business Administration with a concentration in Computer Information Systems at Shaw University in Raleigh, North Carolina. My expected graduation date is May 2025. Throughout my academic career, I have actively engaged in leadership programs, professional development initiatives, and research projects that complement my technical expertise.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <a href="https://www.linkedin.com/in/jeffrey-adkisson-766654175/" target="_blank">
+            <img src="Linkdin.png" alt="LinkedIn Profile" width="58" height="56">
+        </a>
+    </footer>
+</body>
 </html>
+
