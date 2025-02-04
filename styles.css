@@ -1,305 +1,174 @@
-/* =========================
-   General Styles
-========================= */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  color: #000;
-  font-size: 16px;
-  line-height: 1.6;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/* =========================
-   Fixed Header
-========================= */
-.fixed-header {
-  background: #fff;
-  border-bottom: 1px solid #e0e0e0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px 0;
-  z-index: 1000;
-}
-
-.fixed-header .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.fixed-header nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.fixed-header nav a {
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px;
-  transition: color 0.3s ease;
-}
-
-.fixed-header nav a:hover {
-  color: #00aaff;
-}
-
-/* =========================
-   Hero Section
-========================= */
-.hero {
-  height: 60vh;
-  background: linear-gradient(to right, #00aaff, #e0f7ff);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  margin-top: 70px; /* to prevent overlap with fixed header */
-}
-
-.hero h1 {
-  font-size: 3em;
-  margin: 0;
-}
-
-.hero p {
-  font-size: 1.5em;
-  margin: 10px 0;
-}
-
-.hero .hero-btn {
-  background: #00aaff;
-  border: none;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.hero .hero-btn:hover {
-  background: #008ecc;
-}
-
-/* =========================
-   Content Grid
-========================= */
-.content-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
-}
-
-/* =========================
-   Profile / About Me Section
-========================= */
-.profile {
-  width: 90%;
-  max-width: 600px;
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 40px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 15px;
-}
-
-/* =========================
-   Education Section
-========================= */
-.education {
-  width: 90%;
-  max-width: 600px;
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 40px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-/* =========================
-   Professional Experience Section
-   (Floating Bubbles)
-========================= */
-.experience {
-  width: 90%;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-.experience h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/* Container for the floating bubbles */
-.experience-bubbles {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-/* Each experience bubble */
-.experience-bubble {
-  background: #e0f7ff; /* Light baby blue background */
-  color: #000;
-  border-radius: 25px;
-  padding: 20px;
-  width: 300px; /* Adjust width as needed */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.experience-bubble:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Bubble text styles */
-.experience-bubble h3 {
-  margin-top: 0;
-  color: #00aaff; /* Baby blue highlight for job titles */
-}
-
-.experience-bubble .company,
-.experience-bubble .dates {
-  font-style: italic;
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.experience-bubble ul {
-  list-style: disc inside;
-  padding-left: 20px;
-  text-align: left;
-}
-
-/* =========================
-   Leadership & Service Section
-========================= */
-.leadership {
-  width: 90%;
-  max-width: 1200px;
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 40px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.leadership h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.leadership ul {
-  list-style: disc inside;
-  padding-left: 20px;
-  text-align: left;
-}
-
-/* =========================
-   Transferable Skills Section
-========================= */
-.skills {
-  width: 90%;
-  max-width: 1200px;
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 40px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.skills h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.skills ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.skills li {
-  padding: 5px 0;
-}
-
-/* =========================
-   Footer
-========================= */
-.footer {
-  background: #fff;
-  border-top: 1px solid #e0e0e0;
-  text-align: center;
-  padding: 20px;
-}
-
-.footer p {
-  margin: 0 0 10px;
-}
-
-.footer a {
-  color: #00aaff;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-.footer .linkedin-img {
-  width: 40px;
-  height: auto;
-}
-
-/* =========================
-   Responsive Styles
-========================= */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5em;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeffrey Adkisson | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Smooth scroll function for navigation links if desired
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</head>
+<body>
+  <!-- Fixed Header -->
+  <header class="fixed-header">
+    <div class="container">
+      <nav>
+        <a href="#about" onclick="scrollToSection('about')">Home</a>
+        <a href="#experience" onclick="scrollToSection('experience')">Experience</a>
+        <a href="#leadership" onclick="scrollToSection('leadership')">Leadership</a>
+        <a href="#skills" onclick="scrollToSection('skills')">Skills</a>
+        <a href="#education" onclick="scrollToSection('education')">Education</a>
+        <a href="https://docs.google.com/document/d/1ifofARU-UuMPQfdjILcnPZrEnoeOnhFX1lrKAQ1qiqw/edit?usp=sharing" target="_blank" class="resume-btn">Resume</a>
+      </nav>
+    </div>
+  </header>
   
-  .hero p {
-    font-size: 1.2em;
-  }
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Jeffrey Adkisson</h1>
+      <p>IT Professional | Data Analytics | Software Engineering</p>
+      <button class="hero-btn" onclick="scrollToSection('about')">Learn More</button>
+    </div>
+  </section>
   
-  .fixed-header nav {
-    flex-direction: column;
-  }
-}
+  <!-- About Me Section -->
+  <section class="profile" id="about">
+    <img src="Logo1.JPG" alt="Jeffrey Adkisson's Profile Picture" class="profile-img">
+    <h2>About Me</h2>
+    <p>
+      I am a detail-oriented IT professional with expertise in data analytics, programming, and software engineering.
+      Passionate about technology and innovation, I specialize in creating solutions that enhance user experiences
+      and drive business efficiency.
+    </p>
+  </section>
+  
+  <!-- Education Section -->
+  <section class="education" id="education">
+    <h2>Education</h2>
+    <p>Bachelor of Business Administration, Concentration in Computer Information Systems</p>
+    <p>Shaw University, Raleigh, NC | Expected Graduation: May 2025</p>
+  </section>
+  
+  <!-- Professional Experience Section (Floating Bubbles) -->
+  <section class="experience" id="experience">
+    <h2>Professional Experience</h2>
+    <div class="experience-bubbles">
+      <!-- Experience Bubble 1 -->
+      <div class="experience-bubble">
+        <h3>AI Solutions</h3>
+        <p class="company">Shaw University, Raleigh, NC</p>
+        <p class="dates">August 2024 - Present</p>
+        <ul>
+          <li>Enhanced student user experience by developing and programming a multilingual chatbot using ChatGPT API, increasing efficiency by 30% and reducing support requests by 25%.</li>
+          <li>Streamlined troubleshooting for students, handling 10+ hardware/software issues weekly and reducing resolution time by 15%.</li>
+          <li>Launched chatbot updates for over 1,500 users, boosting engagement with digital university services by 20%.</li>
+        </ul>
+      </div>
+      
+      <!-- Experience Bubble 2 -->
+      <div class="experience-bubble">
+        <h3>IT Digital Solutions</h3>
+        <p class="company">UNCF, ICB | Raleigh, NC</p>
+        <p class="dates">June - August 2024</p>
+        <ul>
+          <li>Contributed to the design and implementation of "HBCUv," increasing user engagement by 15% across 10+ HBCUs.</li>
+          <li>Conducted UAT, identifying and resolving 50+ bugs for a 25% improvement in platform stability.</li>
+          <li>Collaborated with stakeholders to secure $500K in funding for feature development.</li>
+        </ul>
+      </div>
+      
+      <!-- Experience Bubble 3 -->
+      <div class="experience-bubble">
+        <h3>Data Analytics I</h3>
+        <p class="company">Blue Cross Blue Shield of NC | Durham, NC</p>
+        <p class="dates">May - July 2024</p>
+        <ul>
+          <li>Improved data quality score from 69% to 70% by collaborating with governance teams.</li>
+          <li>Audited critical data elements in Collibra, reducing processing errors by 20%.</li>
+          <li>Integrated production elements into the Member Pulse Dashboard for timely, accurate info.</li>
+        </ul>
+      </div>
+      
+      <!-- Experience Bubble 4 -->
+      <div class="experience-bubble">
+        <h3>Private Policy</h3>
+        <p class="company">The Hunt-Institute | Cary, NC</p>
+        <p class="dates">November 2023 - January 2024</p>
+        <ul>
+          <li>Analyzed legislative policies impacting West Virginia; recommendations adopted in 3 areas.</li>
+          <li>Authored policy briefs that reduced internal research time by 15%.</li>
+        </ul>
+      </div>
+      
+      <!-- Experience Bubble 5 -->
+      <div class="experience-bubble">
+        <h3>IT Business Analyst</h3>
+        <p class="company">Syneos Health | Raleigh, NC</p>
+        <p class="dates">May 2023 - August 2023</p>
+        <ul>
+          <li>Automated data entry with PowerBI, boosting efficiency by 50% and reducing errors by 30%.</li>
+          <li>Developed a server monitoring dashboard to cut downtime by 15%.</li>
+          <li>Streamlined the purchase order process, reducing cycle time by 20%.</li>
+        </ul>
+      </div>
+      
+      <!-- Experience Bubble 6 -->
+      <div class="experience-bubble">
+        <h3>Performance Scale Engineer</h3>
+        <p class="company">Red Hat | Raleigh, NC</p>
+        <p class="dates">May 2022 - August 2022</p>
+        <ul>
+          <li>Diagnosed and resolved 75% of root-cause issues in the benchmark operator prototype.</li>
+          <li>Conducted 30+ tests to improve system durability, reducing failure rates by 15%.</li>
+          <li>Developed bash scripts and Python code on GitHub, enhancing automation efficiency by 40%.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Leadership & Service Section -->
+  <section class="leadership" id="leadership">
+    <h2>Leadership & Service</h2>
+    <ul>
+      <li>Member, Omega Psi Phi Fraternity, Inc.</li>
+      <li>Mental and Physical Health Educator, Wake County Medical, Raleigh, NC</li>
+      <li>
+        Career Ambassadors Program, Experiential Learning and Career Development Center, Shaw University<br>
+        <small>Mentored 25-50 students on professional development and engaged with 10+ corporate partners to facilitate career-building workshops.</small>
+      </li>
+      <li>
+        Thurgood Marshall College Fund: Leadership Incubator Program, Summer 2023<br>
+        <small>Participated in the inaugural summer leadership intensive with students from over 20 HBCUs.</small>
+      </li>
+    </ul>
+  </section>
+  
+  <!-- Transferable Skills Section -->
+  <section class="skills" id="skills">
+    <h2>Transferable Skills</h2>
+    <ul>
+      <li><strong>Programming:</strong> Python, Bash, Jekyll, HTML</li>
+      <li><strong>Data Analytics:</strong> PowerBI, O360, Ataccama, Collibra</li>
+      <li><strong>Tools:</strong> GitHub, BaseIT, Jira</li>
+      <li><strong>Methodologies:</strong> Agile, UAT, Project Management</li>
+      <li><strong>Other Skills:</strong> Analytical Thinking, Problem-solving, DevOps Solutions</li>
+    </ul>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Connect with me on LinkedIn</p>
+      <a href="https://www.linkedin.com/in/jeffrey-adkisson-jr-766654175/" target="_blank" class="linkedin-link">
+        <img src="Linkdin.png" alt="LinkedIn Profile" class="linkedin-img">
+        <span class="linkedin-handle">jeffrey-adkisson-jr</span>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
