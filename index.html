@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeffrey Adkisson | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark-mode");
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeffrey Adkisson | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="fixed-header">
-        <div class="container">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="Internships.html">Internships</a>
-                <a href="Professional.html">Professional</a>
-                <a href="Contact.html">Contact</a>   
-                <a href="https://docs.google.com/document/d/1ifofARU-UuMPQfdjILcnPZrEnoeOnhFX1lrKAQ1qiqw/edit?usp=sharing" target="_blank" class="resume-btn">Resume</a>
-            </nav>
-        </div>
-    </header>
-    
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Jeffrey Adkisson</h1>
-            <p>IT Professional | Data Analytics | Software Engineering</p>
-            <button onclick="toggleDarkMode()" class="dark-mode-btn">Toggle Dark Mode</button>
-        </div>
+  <!-- Fixed Header -->
+  <header class="fixed-header">
+    <div class="container">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="Internships.html">Internships</a>
+        <a href="Professional.html">Professional</a>
+        <a href="Contact.html">Contact</a>   
+        <a href="https://docs.google.com/document/d/1ifofARU-UuMPQfdjILcnPZrEnoeOnhFX1lrKAQ1qiqw/edit?usp=sharing" target="_blank" class="resume-btn">Resume</a>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Jeffrey Adkisson</h1>
+      <p>IT Professional | Data Analytics | Software Engineering</p>
+      <!-- You can change the button text or link as needed -->
+      <button class="hero-btn">Learn More</button>
+    </div>
+  </section>
+  
+  <!-- Main Content -->
+  <main class="content-grid">
+    <section class="profile">
+      <img src="Logo1.JPG" alt="Jeffrey Adkisson's Profile Picture" class="profile-img">
+      <h2>About Me</h2>
+      <p>
+        I am a detail-oriented IT professional with expertise in data analytics, programming, and software engineering.
+        Passionate about technology and innovation, I specialize in creating solutions that enhance user experiences
+        and drive business efficiency.
+      </p>
     </section>
     
-    <main class="content-grid">
-        <section class="profile">
-            <img src="Logo1.JPG" alt="Jeffrey Adkisson's Profile Picture" class="profile-img">
-            <h2>About Me</h2>
-            <p>I am a detail-oriented IT professional with expertise in data analytics, programming, and software engineering. Passionate about technology and innovation, I specialize in creating solutions that enhance user experiences and drive business efficiency.</p>
-        </section>
-        
-        <section class="education">
-            <h2>Education</h2>
-            <p>Bachelor of Business Administration, Concentration in Computer Information Systems</p>
-            <p>Shaw University, Raleigh, NC | Expected Graduation: May 2025</p>
-        </section>
-    </main>
-    
-    <footer class="footer">
-        <a href="https://www.linkedin.com/in/jeffrey-adkisson-766654175/" target="_blank" class="linkedin-link">
-            <img src="Linkdin.png" alt="LinkedIn Profile" class="linkedin-img">
-        </a>
-    </footer>
+    <section class="education">
+      <h2>Education</h2>
+      <p>Bachelor of Business Administration, Concentration in Computer Information Systems</p>
+      <p>Shaw University, Raleigh, NC | Expected Graduation: May 2025</p>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="https://www.linkedin.com/in/jeffrey-adkisson-766654175/" target="_blank" class="linkedin-link">
+      <img src="Linkdin.png" alt="LinkedIn Profile" class="linkedin-img">
+    </a>
+  </footer>
 </body>
 </html>
+
